@@ -12,6 +12,8 @@
 
     <modules>
         <module>mvc-servlet3</module>
+        <module>bean</module>
+        <module>generic</module>
     </modules>
 
     <dependencyManagement>

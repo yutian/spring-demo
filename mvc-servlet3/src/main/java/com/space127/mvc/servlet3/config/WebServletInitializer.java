@@ -20,7 +20,7 @@ public class WebServletInitializer implements WebApplicationInitializer {
         System.out.println("--------init----------------");
         AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
         ctx.register(AppConfig.class);
-        ctx.refresh();
+//        ctx.refresh();
 
         DispatcherServlet dispatcherServlet = new DispatcherServlet(ctx);
         ServletRegistration.Dynamic registration = servletContext.addServlet("app",dispatcherServlet);
